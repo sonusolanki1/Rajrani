@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+  }
+}
+
+@layer components {
+  .input-style {
+    @apply w-full bg-white border border-gray-100 px-6 py-4 rounded-2xl outline-none transition-all duration-300
+           text-sm font-bold text-gray-900 placeholder:text-gray-200 placeholder:font-black placeholder:uppercase placeholder:text-[10px] placeholder:tracking-widest
+           focus:ring-4 focus:ring-black/5 focus:border-black focus:bg-white shadow-sm;
+  }
+
+  .label-style {
+    @apply text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 block mb-2.5 ml-1 transition-colors;
+  }
+
+  .btn-style {
+    @apply w-full py-5 bg-black text-white font-black rounded-3xl hover:scale-[1.01] active:scale-95 transition-all
+           uppercase tracking-[0.3em] text-[11px] shadow-2xl shadow-black/10 flex items-center justify-center gap-3;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

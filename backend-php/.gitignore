@@ -1,0 +1,68 @@
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+/vendor/
+
+# Composer
+composer.phar
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Cache / Sessions / Temp
+/cache/
+/tmp/
+/temp/
+/sessions/
+
+# Uploaded files (optional)
+uploads/
+
+# PHPUnit
+/phpunit.result.cache
+
+# Build files
+/node_modules/
+/dist/
+/build/
+
+# Laravel specific
+/public/storage
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+
+# Symfony specific
+/var/
+/vendor/
+
+# XAMPP / Local server
+xampp/
+homestead.yaml
+Homestead.json
+
+# Database
+*.sql
+*.sqlite
+
+# Misc
+*.zip
+*.tar.gz
+*.rar
