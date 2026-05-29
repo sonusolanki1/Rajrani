@@ -3,12 +3,12 @@
 // 1. PHP Built-in Server Support (Localhost testing)
 if (PHP_SAPI == 'cli-server') {
     $url  = parse_url($_SERVER['REQUEST_URI']);
-    
+
     // Serve files from uploads directory
     if (strpos($url['path'], '/uploads/') === 0) {
         $filename = basename($url['path']);
         $file = __DIR__ . '/uploads/' . $filename;
-        
+
         if (is_file($file)) {
             $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
             if (in_array($ext, ['jpg', 'jpeg', 'png', 'webp'])) {
@@ -40,8 +40,8 @@ $sanitizedOrigin = rtrim($origin, '/');
 $allowedOrigins = [
     'https://rajrani.online',
     'https://www.rajrani.online',
-    'https://admin-rajrani12.netlify.app',
-    'https://rajrani12.netlify.app',
+    'https://adminrajrani.netlify.app/',
+    'https://rajrani13.netlify.app',
     'http://localhost:3000',
     'http://localhost:5173',
     'http://localhost:5174',
